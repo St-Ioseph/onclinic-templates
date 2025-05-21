@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui/theme" {
+  name: "prototipouno";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.003 247.858);
+  --color-base-200: oklch(98% 0.001 106.423);
+  --color-base-300: oklch(91% 0.08 205.041);
+  --color-base-content: oklch(21% 0.006 56.043);
+  --color-primary: oklch(44% 0.11 240.79);
+  --color-primary-content: oklch(97% 0.021 166.113);
+  --color-secondary: oklch(71% 0.143 215.221);
+  --color-secondary-content: oklch(97% 0.013 236.62);
+  --color-accent: oklch(44% 0.11 240.79);
+  --color-accent-content: oklch(96% 0.018 272.314);
+  --color-neutral: oklch(95% 0.045 203.388);
+  --color-neutral-content: oklch(29% 0.066 243.157);
+  --color-info: oklch(62% 0.214 259.815);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.018 155.826);
+  --color-warning: oklch(76% 0.188 70.08);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.014 343.198);
+  --radius-selector: 0.25rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@plugin "daisyui/theme" {
+  name: "prototipodos";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(98% 0 0);
+  --color-base-300: oklch(100% 0 0);
+  --color-base-content: oklch(21% 0.006 56.043);
+  --color-primary: oklch(39% 0.095 152.535);
+  --color-primary-content: oklch(97% 0.021 166.113);
+  --color-secondary: oklch(68% 0.162 75.834);
+  --color-secondary-content: oklch(97% 0.013 236.62);
+  --color-accent: oklch(62% 0.194 149.214);
+  --color-accent-content: oklch(96% 0.018 272.314);
+  --color-neutral: oklch(96% 0.067 122.328);
+  --color-neutral-content: oklch(29% 0.066 243.157);
+  --color-info: oklch(71% 0.143 215.221);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.018 155.826);
+  --color-warning: oklch(79% 0.184 86.047);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.014 343.198);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.1875rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@plugin "daisyui/theme" {
+  name: "prototipotres";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(98% 0.003 247.858);
+  --color-base-300: oklch(100% 0 0);
+  --color-base-content: oklch(21% 0.006 56.043);
+  --color-primary: oklch(39% 0.09 240.876);
+  --color-primary-content: oklch(97% 0.021 166.113);
+  --color-secondary: oklch(60% 0.126 221.723);
+  --color-secondary-content: oklch(97% 0.013 236.62);
+  --color-accent: oklch(60% 0.126 221.723);
+  --color-accent-content: oklch(96% 0.018 272.314);
+  --color-neutral: oklch(93% 0.032 255.585);
+  --color-neutral-content: oklch(29% 0.066 243.157);
+  --color-info: oklch(52% 0.105 223.128);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.018 155.826);
+  --color-warning: oklch(79% 0.184 86.047);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.014 343.198);
+  --radius-selector: 0.25rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
+  --size-selector: 0.28125rem;
+  --size-field: 0.28125rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 0;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@plugin "daisyui" {
+  themes: prototipouno, prototipodos, prototipotres;
 }
